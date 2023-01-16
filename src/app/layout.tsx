@@ -1,4 +1,4 @@
-import './globals.css';
+import '@app/globals.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
             */}
             <head />
-            <body className="min-h-screen flex flex-col justify-center items-center">{children}</body>
+            <body className="min-h-screen flex flex-col justify-center items-center min-w-[320px]">{children}</body>
         </html>
     );
 }
